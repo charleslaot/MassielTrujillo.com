@@ -49,12 +49,15 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; massieltrujillo</li></ul>
+						<ul><li>&copy;<span id="year"></span> massieltrujillo</li></ul>
 					</div>
 
 			</div>
 
 		<!-- Scripts -->
+			<script>				
+				document.getElementById("year").innerHTML = new Date().getFullYear();
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
